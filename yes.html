@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Yes</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            overflow-x: hidden;
+            background: pink;
+        }
+        img{
+            height: 40px; width: 50px;
+            animation: heart 4s linear infinite;
+        }
+        @keyframes heart{
+            0% {
+                transform: scale(.5);
+            }
+            50% {
+                transform: scale(1.5);
+            }
+            100% {
+                transform: scale(.5);
+            }
+        }
+    </style>
+</head>
+<body>
+    <div id="envelope">
+        <p>
+        <h2>Thankyouuuuu for saying yes,
+            your response means the world to me. I promise to make our time together
+            enjoyable and memorable. Whether we're sharing randoms stories, exploring
+            new places or simply enjoying each other's company. I will cherish every 
+            moment we shared together. Thankyouuuuu again for saying yes and for giving
+            me the chance to create a meaningful memories with youu.</h2>
+        <img src="h.png" alt="">
+        <img src="h.png" alt="">
+        <img src="h.png" alt="">
+        </p>
+    </div>  
+    <span id="Hbutton" onclick="letter()">&#10084;</span>
+    <script>
+        function letter(){
+            var envelope = document.getElementById('envelope');
+            var Hbutton = document.getElementById('Hbutton');
+            if (envelope.style.opacity === '0'){
+                envelope.style.opacity = '1';
+                Hbutton.style.display = 'none';
+            } else {
+                envelope.style.opacity = '0';
+                Hbutton.style.display = 'block';
+            }
+        }
+    </script>
+</body>
+</html>
